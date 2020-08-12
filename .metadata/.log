@@ -1,0 +1,2199 @@
+!SESSION 2020-08-12 01:36:00.939 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2020-08-12 01:37:56.916
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-08-12 01:37:56.916
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-08-12 01:37:57.545
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-08-12 01:37:57.575
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2020-08-12 01:37:58.815
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-12 01:37:58.815
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5713e261,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b6a9ef6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:05.119
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:05.135
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:05.688
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:05.698
+!MESSAGE Fetching all notifications
+
+!ENTRY org.eclipse.osgi 4 0 2020-08-12 01:38:05.842
+!MESSAGE An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+!STACK 0
+org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+Root exception:
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.ui.workbench 4 2 2020-08-12 01:38:05.853
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 01:38:05.854
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 01:38:05.854
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.ui 4 0 2020-08-12 01:38:05.863
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'oracle.eclipse.tools.webtier.ui' plug-in.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 01:38:05.863
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:06.631
+!MESSAGE BrowserCore initialized.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-12 01:38:06.720
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ferdi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:08.530
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:08.584
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:08.589
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:08.597
+!MESSAGE Save JSON notifications content to cache file C:\Users\ferdi\MavenSpringJava\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:11.008
+!MESSAGE Icon https://vaadin.com/documents/10187/10395/tori-icon-blue-bg-90px/4597dffb-3868-4711-b422-8fc3e71844e6?t=1394217295000 is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:16.067
+!MESSAGE Image https://website.vaadin.com/hubfs/MarCom/Kubernetes.png is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:17.014
+!MESSAGE Image https://website.vaadin.com/hubfs/Data-binding-grid-efficient.png is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:17.217
+!MESSAGE Image https://website.vaadin.com/hubfs/Cloud%20deployment%20tutorial.png is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:18.200
+!MESSAGE Image https://website.vaadin.com/hubfs/PWA.png is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:18.210
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 01:38:35.138
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2020-08-12 02:30:34.347
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/dbickley/OpenEditors/release/updatesite/content.jar
+!SESSION 2020-08-12 02:46:34.592 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-08-12 02:46:43.981
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-12 02:46:43.981
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@753b6846,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15961527,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:50.352
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:50.361
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:50.793
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:50.805
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.osgi 4 0 2020-08-12 02:46:50.969
+!MESSAGE An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+!STACK 0
+org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+Root exception:
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.ui.workbench 4 2 2020-08-12 02:46:50.989
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 02:46:50.990
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 02:46:50.991
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.ui 4 0 2020-08-12 02:46:51.000
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'oracle.eclipse.tools.webtier.ui' plug-in.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 02:46:51.000
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-12 02:46:51.241
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ferdi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:51.723
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:51.732
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:51.738
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:51.745
+!MESSAGE Save JSON notifications content to cache file C:\Users\ferdi\MavenSpringJava\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:51.784
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:46:51.817
+!MESSAGE BrowserCore initialized.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2020-08-12 02:47:10.718
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/dbickley/OpenEditors/release/updatesite/content.jar
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:20.374
+!MESSAGE All vaadin 7+ projects : []
+!SESSION 2020-08-12 02:47:44.881 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-08-12 02:47:52.147
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-12 02:47:52.147
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@753b6846,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15961527,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:57.738
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:57.746
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:58.348
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:58.371
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.osgi 4 0 2020-08-12 02:47:58.540
+!MESSAGE An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+!STACK 0
+org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+Root exception:
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.ui.workbench 4 2 2020-08-12 02:47:58.553
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 02:47:58.554
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 02:47:58.555
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.ui 4 0 2020-08-12 02:47:58.566
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'oracle.eclipse.tools.webtier.ui' plug-in.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-08-12 02:47:58.570
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (902).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2711)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module.
+	at org.eclipse.osgi.container.Module.doStart(Module.java:612)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.3.0.201903121357
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-12 02:47:58.898
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ferdi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:59.288
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:59.300
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:59.313
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:59.328
+!MESSAGE Save JSON notifications content to cache file C:\Users\ferdi\MavenSpringJava\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:59.405
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:47:59.456
+!MESSAGE BrowserCore initialized.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2020-08-12 02:48:19.172
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/dbickley/OpenEditors/release/updatesite/content.jar
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 02:48:27.758
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2020-08-12 02:50:14.531
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2020-08-12 02:50:14.551
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:26.769
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:26.776
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@44fa2df3[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=1236)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:26.785
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:26.885
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.665
+!MESSAGE Boot LS startup time from start to initialized: 1825ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.690
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.myWwlHFbisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.696
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.702
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.708
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.715
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.721
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.726
+!MESSAGE subscribing to classpath changes: sts4.classpath.myWwlHFb isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.733
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.739
+!MESSAGE subsribers = {sts4.classpath.myWwlHFb=Send Classpath Notifications(1324)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.744
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.749
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.754
+!MESSAGE Preparing classpath changed notification coolApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.759
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.myWwlHFb => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.764
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.773
+!MESSAGE classpath=21 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.779
+!MESSAGE buffering callback sts4.classpath.myWwlHFb coolApp false 21
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.784
+!MESSAGE executing callback sts4.classpath.myWwlHFb 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:51:28.803
+!MESSAGE executing callback sts4.classpath.myWwlHFb SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-08-12 02:54:21.956
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:54:43.452
+!MESSAGE Preparing classpath changed notification coolApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:54:43.465
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:54:43.479
+!MESSAGE classpath=21 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:54:43.491
+!MESSAGE buffering callback sts4.classpath.myWwlHFb coolApp false 21
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:54:43.502
+!MESSAGE executing callback sts4.classpath.myWwlHFb 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:54:43.518
+!MESSAGE executing callback sts4.classpath.myWwlHFb SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:56:02.576
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.myWwlHFb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:56:02.583
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.myWwlHFb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:56:02.590
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 02:56:02.596
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.myWwlHFb => OK
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:56:53.153
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:56:53.173
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:56:53.375
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:56:53.384
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.codeaffine.archive.ui 4 0 2020-08-12 02:57:10.569
+!MESSAGE error in opening zip file
+!STACK 0
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at com.codeaffine.archive.ui.internal.model.ArchiveReader.openZipFile(ArchiveReader.java:49)
+	at com.codeaffine.archive.ui.internal.model.ArchiveReader.read(ArchiveReader.java:39)
+	at com.codeaffine.archive.ui.internal.model.ArchiveReader.read(ArchiveReader.java:21)
+	at com.codeaffine.archive.ui.internal.viewer.ArchiveContentProvider.getChildren(ArchiveContentProvider.java:78)
+	at com.codeaffine.archive.ui.internal.viewer.ArchiveContentProvider.getChildren(ArchiveContentProvider.java:38)
+	at com.codeaffine.archive.ui.internal.viewer.ArchiveContentProviderWrapper.getChildren(ArchiveContentProviderWrapper.java:27)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:98)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:241)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:96)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:160)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:146)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:132)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1414)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:350)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:847)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:621)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:813)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:604)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:766)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedState(AbstractTreeViewer.java:2516)
+	at org.eclipse.ui.navigator.CommonNavigator.handleDoubleClick(CommonNavigator.java:568)
+	at org.eclipse.ui.navigator.resources.ProjectExplorer.handleDoubleClick(ProjectExplorer.java:327)
+	at org.eclipse.ui.navigator.CommonNavigator$4$1.run(CommonNavigator.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.navigator.CommonNavigator$4.doubleClick(CommonNavigator.java:538)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:777)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:774)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1518)
+	at org.eclipse.ui.navigator.CommonViewer.handleDoubleSelect(CommonViewer.java:448)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1205)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:251)
+	at org.eclipse.jface.util.OpenStrategy.access$0(OpenStrategy.java:249)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:308)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3986)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:02.434
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:02.441
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:02.453
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:03.547
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:03.554
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:04.620
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:04.627
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:08.782
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:08.789
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:08.798
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:41.115
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:41.122
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 02:59:41.130
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:00:06.844
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:00:06.851
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-08-12 03:00:23.171
+!MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-08-12 03:00:23.388
+!MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-08-12 03:03:14.169
+!MESSAGE The server cannot be started because one or more of the ports are invalid. Open the server editor and correct the invalid ports.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:12:16.334
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:12:16.342
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:12:16.352
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2020-08-12 03:12:16.391
+!MESSAGE C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar
+!STACK 0
+org.eclipse.jst.jee.archive.ArchiveOpenFailureException: C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:56)
+	at org.eclipse.jst.j2ee.internal.archive.JavaEEArchiveUtilities.openBinaryArchive(JavaEEArchiveUtilities.java:254)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper$ArchiveCache.openArchive(JavaEEBinaryComponentHelper.java:612)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.openArchive(JavaEEBinaryComponentHelper.java:470)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getUniqueArchive(JavaEEBinaryComponentHelper.java:422)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getArchive(JavaEEBinaryComponentHelper.java:415)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getJavaEEQuickPeek(JavaEEBinaryComponentHelper.java:98)
+	at org.eclipse.jst.j2ee.project.JavaEEProjectUtilities.getJ2EEComponentType(JavaEEProjectUtilities.java:273)
+	at org.eclipse.jst.j2ee.internal.common.exportmodel.JEEHeirarchyExportParticipant.isChildModule(JEEHeirarchyExportParticipant.java:42)
+	at org.eclipse.wst.common.componentcore.internal.flat.GlobalHeirarchyParticipant.isChildModule(GlobalHeirarchyParticipant.java:41)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.isChildModule(FlatVirtualComponent.java:367)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.addUsedReferences(FlatVirtualComponent.java:305)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.treeWalk(FlatVirtualComponent.java:235)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:188)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.fetchResources(FlatVirtualComponent.java:118)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.members(FlatComponentDeployable.java:236)
+	at org.eclipse.jst.j2ee.internal.deployables.J2EEFlexProjDeployable.members(J2EEFlexProjDeployable.java:272)
+	at org.eclipse.wst.server.core.internal.ModulePublishInfo.hasDelta(ModulePublishInfo.java:437)
+	at org.eclipse.wst.server.core.internal.ServerPublishInfo.hasDelta(ServerPublishInfo.java:442)
+	at org.eclipse.wst.server.core.internal.Server.hasPublishedResourceDelta(Server.java:1602)
+	at org.eclipse.wst.server.core.internal.Server$ResourceChangeJob$1.visit(Server.java:219)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3067)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3051)
+	at org.eclipse.wst.server.core.internal.Server$ResourceChangeJob.run(Server.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar (The system cannot find the file specified)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities$1.<init>(ManifestUtilities.java:259)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.newZipFile(ManifestUtilities.java:259)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:248)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:234)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.resetZipFile(JavaEEBinaryComponentLoadAdapter.java:67)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:51)
+	... 24 more
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-08-12 03:12:17.442
+!MESSAGE Error reading file C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.wst.server.core.util.PublishHelper.copyFile(PublishHelper.java:503)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishDelta(PublishHelper.java:437)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishDelta(PublishHelper.java:461)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishDelta(PublishHelper.java:461)
+	at org.eclipse.jst.server.tomcat.core.internal.PublishOperation2.publishDir(PublishOperation2.java:143)
+	at org.eclipse.jst.server.tomcat.core.internal.PublishOperation2.execute(PublishOperation2.java:84)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.performTasks(ServerBehaviourDelegate.java:1337)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:956)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:776)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3184)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:357)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:12:17.555
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:12:17.567
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-08-12 03:12:17.783
+!MESSAGE Could not download sources for org.hibernate:hibernate-orm-jbossmodules:5.4.20.Final
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate:hibernate-orm-jbossmodules:jar:sources:5.4.20.Final
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.hibernate:hibernate-orm-jbossmodules:jar:sources:5.4.20.Final
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-08-12 03:12:17.784
+!MESSAGE Could not resolve artifact org.hibernate:hibernate-orm-jbossmodules:jar:sources:5.4.20.Final
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-08-12 03:12:17.784
+!MESSAGE Missing org.hibernate:hibernate-orm-jbossmodules:jar:sources:5.4.20.Final
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-08-12 03:12:18.627
+!MESSAGE Error reading file C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ferdi\.m2\repository\org\hibernate\hibernate-orm-jbossmodules\5.4.20.Final\hibernate-orm-jbossmodules-5.4.20.Final.jar (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.wst.server.core.util.PublishHelper.copyFile(PublishHelper.java:503)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishDelta(PublishHelper.java:437)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishDelta(PublishHelper.java:461)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishDelta(PublishHelper.java:461)
+	at org.eclipse.jst.server.tomcat.core.internal.PublishOperation2.publishDir(PublishOperation2.java:143)
+	at org.eclipse.jst.server.tomcat.core.internal.PublishOperation2.execute(PublishOperation2.java:84)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.performTasks(ServerBehaviourDelegate.java:1337)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:956)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:776)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3184)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:357)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:10.329
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:10.338
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:10.347
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:11.473
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:11.482
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:19.309
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:19.317
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 03:13:19.326
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2020-08-12 03:25:04.123
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/dbickley/OpenEditors/release/updatesite/content.jar
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 04:25:03.215
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 04:25:03.221
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 04:25:03.228
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 04:25:03.235
+!MESSAGE Removed all models from server.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-08-12 04:25:04.087
+!MESSAGE Launch configuration App references closed project coolApp
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration App references closed project coolApp
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1710)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:522)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:352)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:825)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:989)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:147)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2020-08-12 04:25:04.087
+!MESSAGE Launch configuration App references closed project coolApp
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-08-12 04:25:04.094
+!MESSAGE Launch configuration App references closed project coolApp
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration App references closed project coolApp
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1710)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:522)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:353)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:825)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:989)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:147)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2020-08-12 04:25:04.094
+!MESSAGE Launch configuration App references closed project coolApp
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-08-12 04:25:04.107
+!MESSAGE Launch configuration App references closed project coolApp
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration App references closed project coolApp
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1710)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2147)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:375)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:354)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:825)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:989)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:147)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2020-08-12 04:25:04.107
+!MESSAGE Launch configuration App references closed project coolApp
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 04:25:11.980
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2020-08-12 04:25:11.980
+!MESSAGE Removed all models from server.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:28:32.616
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:28:32.621
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:28:33.669
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:28:33.676
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:28:44.257
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:28:44.267
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:29:11.438
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:29:11.446
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:29:11.455
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:30:41.420
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:30:41.425
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:30:57.804
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:30:57.814
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:58.030
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:58.036
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@44fa2df3[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=1236)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:58.042
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.639
+!MESSAGE Boot LS startup time from start to initialized: 1590ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.663
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.aDsihSaGisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.669
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.676
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.682
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.688
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.693
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.699
+!MESSAGE subscribing to classpath changes: sts4.classpath.aDsihSaG isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.704
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.709
+!MESSAGE subsribers = {sts4.classpath.aDsihSaG=Send Classpath Notifications(2769)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.714
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.719
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.724
+!MESSAGE Preparing classpath changed notification spring-rest-demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.728
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.aDsihSaG => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.733
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.740
+!MESSAGE classpath=32 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.746
+!MESSAGE buffering callback sts4.classpath.aDsihSaG spring-rest-demo false 32
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.751
+!MESSAGE executing callback sts4.classpath.aDsihSaG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:30:59.767
+!MESSAGE executing callback sts4.classpath.aDsihSaG SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:31:39.544
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:31:39.550
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:31:43.826
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aDsihSaG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:31:43.833
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.aDsihSaG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:31:43.838
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:31:43.844
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aDsihSaG => OK
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:32:59.569
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:32:59.577
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:32:59.793
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:32:59.798
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@44fa2df3[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=1236)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:32:59.803
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.374
+!MESSAGE Boot LS startup time from start to initialized: 1564ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.397
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.fyLkHZSeisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.402
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.408
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.413
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.419
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.425
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.429
+!MESSAGE subscribing to classpath changes: sts4.classpath.fyLkHZSe isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.434
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.439
+!MESSAGE subsribers = {sts4.classpath.fyLkHZSe=Send Classpath Notifications(2848)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.444
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.449
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.453
+!MESSAGE Preparing classpath changed notification spring-rest-demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.458
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.fyLkHZSe => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.462
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.470
+!MESSAGE classpath=32 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.476
+!MESSAGE buffering callback sts4.classpath.fyLkHZSe spring-rest-demo false 32
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.481
+!MESSAGE executing callback sts4.classpath.fyLkHZSe 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:33:01.496
+!MESSAGE executing callback sts4.classpath.fyLkHZSe SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:33:48.485
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:33:48.492
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:34:03.110
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:34:03.110
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:34:40.642
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:34:40.648
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:34:49.842
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fyLkHZSe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:34:49.847
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.fyLkHZSe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:34:49.852
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:34:49.857
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fyLkHZSe => OK
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:35:17.733
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:35:17.738
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:35:42.281
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:35:42.289
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:42.466
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:42.471
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@44fa2df3[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=1236)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:42.477
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.052
+!MESSAGE Boot LS startup time from start to initialized: 1570ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.078
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XezCvIwFisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.083
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.088
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.094
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.103
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.108
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.113
+!MESSAGE subscribing to classpath changes: sts4.classpath.XezCvIwF isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.118
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.118
+!MESSAGE subsribers = {sts4.classpath.XezCvIwF=Send Classpath Notifications(2968)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.118
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.128
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.128
+!MESSAGE Preparing classpath changed notification spring-rest-demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.138
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XezCvIwF => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.138
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.153
+!MESSAGE classpath=32 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.158
+!MESSAGE buffering callback sts4.classpath.XezCvIwF spring-rest-demo false 32
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.158
+!MESSAGE executing callback sts4.classpath.XezCvIwF 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:35:44.177
+!MESSAGE executing callback sts4.classpath.XezCvIwF SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:37:17.363
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:37:17.367
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:46:45.388
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:46:45.401
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:47:53.744
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:47:53.750
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:49:20.854
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:49:20.860
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:50:16.446
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:50:16.452
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:51:16.513
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:51:16.519
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:51:44.129
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:51:44.135
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:53:56.782
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:53:56.788
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:54:05.203
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:54:05.209
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:55:04.172
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:55:04.178
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:55:12.875
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:55:12.881
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:56:43.709
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-08-12 04:56:43.714
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:56:50.043
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XezCvIwF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:56:50.048
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.XezCvIwF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:56:50.053
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-12 04:56:50.058
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XezCvIwF => OK
